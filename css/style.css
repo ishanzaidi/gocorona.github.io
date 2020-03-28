@@ -1,0 +1,81 @@
+
+.toggle {
+  margin:7vmax;
+  font-family: SkiltGothic;
+	src: url(../_nuxt/fonts/7667f82.eot);
+  src: url(../_nuxt/fonts/7667f82d41d.eot?#iefix) format("embedded-opentype"), url(../_nuxt/fonts/6554c6f.woff2) format("woff2"), url(../_nuxt/fonts/0af9b81.woff) format("woff"), url(../_nuxt/fonts/56af04f.ttf) format("truetype");
+	font-weight: 300;
+	font-style: normal;
+  font-size: 1.5vmax;
+}
+.toggle .tabs {
+  overflow: hidden;
+  height: 6vmax;
+  line-height: 25px;
+  margin-left: 22%;
+  margin-top: -5%;
+  position:absolute;
+  animation: fadeIn 2s ease;
+
+}
+
+@media (max-width:514px) {
+	.limit {
+		padding: 0 16px
+	}
+}
+@media (max-width:768px) {
+  .toggle {
+    margin-left:0vmax;
+    margin-right: 0vmax;
+    margin-top: 4vmax;
+  }
+  .toggle .tabs {
+    margin-left: 15%;
+    font-size: 2.3vmax;
+  }
+  .toggle .panels .panel {
+    text-align: justify;
+    font-size: 2vmax;
+  }
+}
+.toggle .tabs .tab {
+  float:left;
+  color: white;
+  opacity: .6;
+  height: 4vmax;
+  margin: 2px 1vw 0;
+  padding: 0 8px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: opacity 1s ease;
+}
+.toggle .tabs .tab.active {
+  opacity: 1;
+
+}
+
+.toggle .panels .panel {
+  padding: 20px 10px;
+  display: none;
+  opacity: 1;
+  animation: fadeIn 2s ease;
+  color:white;
+}
+.toggle .panels .panel:first-child {
+  display: block;
+}
+
+.border {
+
+  height: .5vh;
+  border-radius: 2px;
+  width: 6vmax;
+  margin: 4vmax 0 0;
+  margin-left: 1.5vmax;
+  min-width:70px;
+
+  background-color:white;
+  position:absolute;
+
+}
